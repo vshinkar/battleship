@@ -1,0 +1,92 @@
+html, body {
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+#battle-field {
+    width: 320px;
+    height: 320px;
+    margin: 0 auto;
+    border: 1px solid #90A4AE;
+}
+
+#battle-field .s {
+    background: #90A4AE;
+}
+
+#battle-field div {
+    width: 30px;
+    height: 30px;
+    float: left;
+    border: 1px solid #90A4AE;
+}
+
+/* buttons start */
+.btn-play {
+    height: 45px;
+    display: block;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+    margin: 0 auto;
+    background-position: 0 -150px;
+    cursor: pointer;
+}
+
+.button-secondary {
+    margin: 0 auto;
+    display: block;
+    height: 30px;
+    width: 200px;
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    font-size: 20px;
+    margin-top: 30px;
+    background: rgb(66, 184, 221); /* this is a light blue */
+}
+
+/* buttons end */
+
+#battleship {
+    height: 45px;
+    display: block;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+    margin: 0 auto;
+    background-position: 0 -150px;
+}
+
+/* display */
+[data-hidden="true"] {
+    display: none;
+}
+
+[data-hidden="false"] {
+    display: block;
+}
+
+#battle-field .hit {
+    background: rgb(66, 184, 221);
+    border: 1px solid rgb(66, 184, 221);
+}
+
+#battle-field .past {
+    background: #F0F6D3;
+}
+
+#desc {
+    height: 45px;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center;
+    margin: 0 auto;
+    background-position: 0 -150px;
+    margin-top: 22px;
+}
