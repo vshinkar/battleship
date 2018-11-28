@@ -34,25 +34,6 @@ class Route
         $controllerName = $controllerName . 'Controller';
         $actionName = 'action' . $actionName;
 
-        // load model file
-        $modelFile = strtolower($modelName) . '.php';
-        $modelPath = "Entities/" . $modelFile;
-
-        if (file_exists($modelPath)) {
-            include "Entities/" . $modelFile;
-        }
-
-        // load controller file
-        $controllerFile = strtolower($controllerName) . '.php';
-        $controllerPath = "Controllers/" . $controllerFile;
-
-        if (file_exists($controllerPath)) {
-            include "Controllers/" . $controllerFile;
-        } else {
-            // page not found
-            Route::ErrorPage404();
-        }
-
         // create controller
         $name = '\ValeriyShinkar\Controllers\\' . $controllerName;
 
